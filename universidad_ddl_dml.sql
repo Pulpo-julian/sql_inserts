@@ -42,7 +42,7 @@ CREATE TABLE tblCarrera
     PRIMARY KEY(codigo),
     -- SE TRAEN FK
     CONSTRAINT tblFacultad_tblCarrera_facultad FOREIGN KEY(facultad)
-    REFERENCES tblFacultad(docid)
+    REFERENCES tblFacultad(codigo)
 );
 
 -- SE CREA TABLA ESTUDIANTES
