@@ -1,6 +1,6 @@
 -- SE CREA BASE DE DATOS UNIVERSIDAD2
-CREATE DATABASE universidad2;
-USE universidad2;
+CREATE DATABASE universidad3;
+USE universidad3;
 
 -- TABLA PROFESOR
 CREATE TABLE tblProfesor
@@ -96,13 +96,13 @@ INSERT INTO tblCarrera VALUES
 ('2','medicina','2'),
 ('3','ingenieria en sistemas','1');
 
---PUNTO 3 INGRESO 3 REGISTROS EN LA TABLA ESTUDIANTES
+-- PUNTO 3 INGRESO 3 REGISTROS EN LA TABLA ESTUDIANTES
 INSERT INTO tblEstudiantes VALUES
 ('1','Maria Alejandra','Martinez', 'CLL 23 n56', '1', '9', 'maria@universidad.com', 0),
 ('2','mario andres','mejia', 'CLL 26 n58', '2', '8', 'mario@universidad.com', 12000),
 ('56482156','jose luis','gonzales', 'CLL 11 n12', '3', '5', 'jose@universidad.com', 26000);
 
---PUNTO 5
+-- PUNTO 5
 INSERT INTO tblProfesor VALUES
 ('15425485','marta','bolaños');
 
