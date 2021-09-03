@@ -8,7 +8,7 @@ CREATE TABLE tblProfesor
     docid VARCHAR(15) NOT NULL,
     nombres VARCHAR(40) NOT NULL,
     apellidos VARCHAR(30) NOT NULL,
-    PRIMARY KEY(tblProfesor)
+    PRIMARY KEY(docid)
 );
 
 -- TABLA MATERIA
@@ -73,5 +73,14 @@ CREATE TABLE tblMateriaEstudiante
     -- LOS DOS CAMP0S SON FK ASI QUE SE TRAEN
     CONSTRAINT tblEstud_tblmatest_docidest FOREIGN KEY(docidestudiante)
     REFERENCES tblEstudiantes(docid),
-    
-)
+    CONSTRAINT tblEstud_tblMat_codmat FOREIGN KEY(codmateria)
+    REFERENCES tblMateria(codigo)
+);
+
+-- INICIO CON EL PUNTO 2 YA QUE EL 1 NECESITA DATOS DE OTRA TABLA
+-- INGRESO 3 REGISTROS EN TABLA PROFESOR
+INSERT INTO tblProfesor VALUES
+()
+
+
+-- PUNTO 1 INGRESO 3 REGISTROS EN LA TABLA CARRERA
